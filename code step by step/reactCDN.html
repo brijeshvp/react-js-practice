@@ -1,0 +1,41 @@
+<!-- react cdn link: https://reactjs.org/docs/cdn-links.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+</head>
+
+<body>
+    <div id="mydiv">This is default msg - {props.greetings}</div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- NOTE: type='text/babel' is compulsory - it tells babel to compile jsx notation -->
+    <script type="text/babel">
+        // component name must be capitalized
+        function Comp2() {
+            return <div>hello</div>
+        }
+        // ReactDOM.render(<Comp1/>,document.getElementById('mydiv'));
+        class Comp1 extends React.Component {
+            render() {
+                return <div> hi </div>
+            }
+        }
+        // ReactDOM.render(<Comp2 />, document.getElementById('mydiv'));
+
+        // syntax: createElement(type, props, ...children)
+        let element = React.createElement('h1',{},'this is example text');
+        ReactDOM.render(element,document.getElementById('mydiv'));
+        
+    </script>
+</body>
+
+</html>

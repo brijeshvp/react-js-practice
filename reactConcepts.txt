@@ -1,0 +1,11 @@
+Best documentation for react js(easy to learn): 
+    https://reactjs.org/docs/getting-started.html
+
+create-react-app: creates basic react folder structure for us
+    npx create-react-app <app-name>
+
+NOTE: npx helps us use a package in our worflow without installing it(without npm install)
+we will use create-react-app without installing it
+
+named export(export specific stuff - import name must be same as export name) and default export(name can be diff while importing) concept in js
+
